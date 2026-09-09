@@ -234,3 +234,26 @@ button:hover{
   }
 
 }
+
+@media (max-width: 376px) {
+
+  header{
+    font-size: 9px;
+    text-align: center;
+    align-items: center;
+    width: 92.8%;
+    padding: 0px 6px;
+    margin-top: -10px;
+    height: 70px;
+  }
+
+  body{
+    background-color:#092F64
+  }
+
+  form {
+    width: 105%;
+    margin-top: 44px;
+  }
+
+}
