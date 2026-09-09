@@ -7,6 +7,7 @@ const inputEmail = document.getElementById('inputEmail');
 const errorNama = document.getElementById('error-nama');
 const errorEmail = document.getElementById('error-email');
 
+// Check kondisi checkbox. Jika dicentang → tombol submit aktif, dan sebaliknya
 checkbox.addEventListener('change', function() {
     if (checkbox.checked) {
         tombol.disabled = false;
@@ -15,6 +16,7 @@ checkbox.addEventListener('change', function() {
     }
 });
 
+// Form pendaftaran (input, validasi, & submit)
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -99,28 +101,28 @@ tombol.addEventListener('mouseenter', function() {
         return; 
     }
     
-    // Jika tombol aktif, cek warnanya seperti biasa
+    // Jika tombol aktif, cek warnanya kayak biasa
     if (tombol.style.backgroundColor === "rgb(217, 48, 37)" || tombol.style.backgroundColor === "#d93025") {
-        // JIKA MERAH (ERROR)
+        // KALAU MERAH (ERROR)
         tombol.style.boxShadow = "0 0 15px rgba(217, 48, 37, 0.6)";
         tombol.style.borderColor = "#d93025";
     } else {
-        // JIKA NORMAL (HITAM)
+        // KALAU NORMAL (HITAM)
         tombol.style.boxShadow = "0 0 15px rgba(0, 102, 204, 0.5)";
         tombol.style.borderColor = "#0066cc";
     }
 });
 
 
-// 2. TIDAK HOVER (cursor keluar dari tombol)
+// UNHOVER (cursor keluar dari tombol)
 tombol.addEventListener('mouseleave', function() {
     // Delete shadow 
     tombol.style.boxShadow = "";
     
-    // Kembalikan border sesuai warna dasarnya saat itu
+    // Kembalikan border sesuai warna dasarnya
     if (tombol.style.backgroundColor === "rgb(217, 48, 37)" || tombol.style.backgroundColor === "#d93025") {
         tombol.style.borderColor = "#d93025";
     } else {
-        tombol.style.borderColor = "#222222"; // Warna border hitam bawaan di CSS kamu
+        tombol.style.borderColor = "#222222"; // Warna border default
     }
 });
