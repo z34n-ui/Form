@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Tech Fest 2026</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <header>
+    <h1>Form Pendaftaran Tech Fest 2026</h1>
+    </header>
+
+    <br>
+
+    <form id="formPendaftaran" novalidate>
+
+        <div class="form-group">
+            <label for="inputNama">Nama Lengkap:</label><br>
+            <br>
+            <input type="text" id="inputNama" placeholder="Masukkan nama Anda">
+            <br>
+            <small id="error-nama" style="color: red;"></small>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            <label for="inputEmail">Email:</label><br>
+            <br>
+            <input type="email" id="inputEmail" placeholder="Masukkan email Anda">
+            <br>
+            <small id="error-email" style="color: red;"></small>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="pilihan-group">
+            <select name="jurusan" id="jurusan">
+                <option value="" disabled selected>Pilih jurusan</option>
+                <option value="pf">PF</option>
+                <option value="rpl">RPL</option>
+                <option value="tkj">TKJ</option>
+                <option value="tja">TJA</option>
+            </select> 
+
+            <select name="kelas" id="kelas">
+                <option value="" disabled selected>Pilih kelas</option>
+
+                <!-- KELAS 10 -->
+                <option value="xBp1">X BP - 1</option>
+
+                <option value="xPplg1">X PPLG - 1</option>
+                <option value="xPplg2">X PPLG - 2</option>
+                <option value="xPplg3">X PPLG - 3</option>
+
+                <option value="xTjkt1">X TJKT - 1</option>
+                <option value="xTjkt2">X TJKT - 2</option>
+                <option value="xTjkt3">X TJKT - 3</option>
+                <option value="xTjkt4">X TJKT - 4</option>
+
+                <!-- KELAS 11 -->
+                <option value="xiPf1">XI PF - 1</option>
+                        
+                <option value="xiRpl1">XI RPL - 1</option>
+                <option value="xiRpl2">XI RPL - 2</option>
+                <option value="xiRpl3">XI RPL - 3</option>
+
+                <option value="xiTkj1">XI TKJ - 1</option>
+                <option value="xiTkj2">XI TKJ - 2</option>
+                <option value="xiTkj3">XI TKJ - 3</option>
+
+                <option value="xiTja1">XI TJA - 1</option>
+                <option value="xiTja2">XI TJA - 2</option>
+                <option value="xiTja3">XI TJA - 3</option>
+
+                <!-- KELAS 12 -->
+                <option value="xiiPf1">XII PF - 1</option>
+                <option value="xiiPf2">XII PF - 2</option>
+
+                <option value="xiiRpl1">XII RPL - 1</option>
+                <option value="xiiRpl2">XII RPL - 2</option>
+                <option value="xiiRpl3">XII RPL - 3</option>
+
+                <option value="xiiTkj1">XII TKJ - 1</option>
+                <option value="xiiTkj2">XII TKJ - 2</option>
+                <option value="xiiTkj3">XII TKJ - 3</option>
+
+                <option value="xiiTja1">XII TJA - 1</option>
+                <option value="xiiTja2">XII TJA - 2</option>
+                <option value="xiiTja3">XII TJA - 3</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <label for="inputKegiatan">Kegiatan:</label><br>
+            <br>
+            <input type="text-2" id="inputKegiatan" placeholder="Masukkan kegiatan yang ingin diikuti">
+        </div>
+
+        <br>
+        <br>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="checkSetuju">
+            <label class="checkbox-text" for="checkSetuju">Saya menyetujui Syarat & Ketentuan</label>
+        </div>
+
+        <br>
+        <br>
+
+        <button type="submit" id="tombolSubmit" disabled>Daftar Sekarang</button>
+
+        <br>
+
+        <div id="hasil"></div>
+
+    </form>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
