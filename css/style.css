@@ -32,7 +32,7 @@ header:hover{
 }
 
 body{
-  background-color: rgb(228, 228, 228);
+  background-color: #092F64;
   color: #092F64;
   padding: 20px 10px;
   display: flex;
@@ -145,7 +145,7 @@ button{
   border-radius: 100px;
   font-family: inherit;
   font-size: 14px;
-  background-color: #222222;
+  background-color: #363636;
   color: white;
   transition: all 0.25s ease;
   width: 100%;
@@ -173,6 +173,21 @@ button:hover{
   border: 1px solid #326bd6;
   border-radius: 10px;
   transition: 0.2s;
+}
+
+.tdm{
+  text-decoration: none;
+  color:#ffffff;
+  background-color: #363636;
+  padding: 7px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 100px;
+}
+
+.tdm:hover{
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .hasil{
